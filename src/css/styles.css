@@ -10,6 +10,14 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@font-face {
+  font-family: 'sarabun';
+  src: url('../font/Sarabun/Sarabun-Regular.ttf');
+}
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -57,7 +65,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: 'Sarabun', sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -89,6 +97,32 @@
   :root {
     scroll-behavior: smooth;
   }
+}
+
+
+.navbar-brand{
+  font-family: 'Sarabun', sans-serif;
+  font-weight: bold;
+}
+
+.bg-image-header{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-image: url("../assets/images/header_background.webp");
+  background-color: var(--bs-dark);
+  background-position: center;
+  background-size: cover;
+}
+
+.header-text-box{
+  background: rgba(33, 37, 41, .5);
+  border-radius: 3%;
+}
+
+
+
+.mt-interesting{
+  text-align: center;
 }
 
 body {
