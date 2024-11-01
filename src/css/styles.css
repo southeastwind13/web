@@ -103,6 +103,7 @@
 .navbar-brand{
   font-family: 'Sarabun', sans-serif;
   font-weight: bold;
+  color: var(--bs-gray-dark);
 }
 
 .bg-image-header{
