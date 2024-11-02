@@ -99,7 +99,7 @@
   }
 }
 
-
+/* Adjust navigation bar */
 .navbar-brand{
   font-family: 'Sarabun', sans-serif;
   font-weight: bold;
@@ -119,6 +119,49 @@
   background: rgba(33, 37, 41, .5);
   border-radius: 3%;
 }
+
+/* Service section */
+
+/* Make grid central */
+.flex-service{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Create grid bu */
+.service-grid{
+  display: inline-grid;
+  gap: 3rem;
+}
+
+.card-service{
+  border-radius: 5% !important;
+}
+
+.card-img-top-service{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+
+@media (min-width: 600px) {
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .service-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 
 
 body {
