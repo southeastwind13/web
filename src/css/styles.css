@@ -5899,6 +5899,19 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  align-items: center;
+}
+
+@media (min-width: 600px)  {
+  .carousel{
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .carousel{
+    width: 50%;
+  }
 }
 
 .carousel.pointer-event {
@@ -5916,10 +5929,10 @@ textarea.form-control-lg {
   content: "";
 }
 
-.carousel{
-  width: 50% !important;
+/* .carousel{
+  width: 50%;
   align-items: center;
-}
+} */
 
 .carousel-item {
   position: relative;
